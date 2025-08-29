@@ -13,7 +13,7 @@ def init_connection():
     client = gspread.authorize(creds)
     return client
 
-connect = init_connection()
+connect=init_connection()
 
 st.header("GRADING SYSTEM")
 st.subheader("these grades can not be changed")
@@ -69,3 +69,4 @@ if st.button("Show Grades in Table"):
 
     df = pd.DataFrame(data)
     st.table(df)
+
